@@ -24,6 +24,9 @@ public class GameController : MonoBehaviour {
 	public GameObject Menu;
 	public GameObject SureQuit;
 	public GameObject Setting;
+
+	public GameObject dsfordebug;
+
 	public ToggleGroup Controltoggle;
 	public Toggle JoyStick;
 	public Toggle Accelerometer;
@@ -49,6 +52,9 @@ public class GameController : MonoBehaviour {
 	private int currentvalue;
 
 	void Start(){
+		if (debug) {
+			dsfordebug.SetActive (true);
+		}
 		Game_scene = SceneManager.GetSceneByName ("Main");
 		SceneManager.SetActiveScene (Game_scene);
 

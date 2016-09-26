@@ -68,7 +68,7 @@ public class GameManager : MonoBehaviour {
 
 	public void GetConfig(){
 		Setting.SetActive (true);
-		if (ds.HighScore < 1000) {
+		if (ds.HighScore < 50) {
 			Difficulty = 0;
 			Normal.interactable = false;
 			NormalText.color = Color.gray;
